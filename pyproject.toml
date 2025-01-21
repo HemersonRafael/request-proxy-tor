@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "request-proxy-tor"
+version = "0.1.0"
+description = ""
+authors = ["Hemerson Rafael <rafaelpontes1995@.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+requests = "^2.32.3"
+pysocks = "^1.7.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
