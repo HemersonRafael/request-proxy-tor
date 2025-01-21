@@ -13,8 +13,8 @@ RUN echo "SOCKSPort 127.0.0.1:9050" >> /etc/tor/torrc && \
     echo "CookieAuthentication 0" >> /etc/tor/torrc && \
     echo "MaxCircuitDirtiness 60" >> /etc/tor/torrc && \
     echo "HashedControlPassword $(tor --hash-password 'sua_senha_aqui' | tail -n 1)" >> /etc/tor/torrc && \
-    echo "ExitNodes {BR}" >> /etc/tor/torrc && \  # Define o Brasil como país de saída
-    echo "StrictNodes 1" >> /etc/tor/torrc         # Usa estritamente os nós definidos
+    echo "ExitNodes {BR}" >> /etc/tor/torrc && \
+    echo "StrictNodes 1" >> /etc/tor/torrc
 
 # Define o diretório de trabalho
 WORKDIR /usr/src/app
